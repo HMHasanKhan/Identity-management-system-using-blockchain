@@ -1,0 +1,74 @@
+<app-header></app-header>
+<head>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/3.3.3/adapter.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+  <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+</head>
+
+
+
+<section class="wellcome_area clearfix" id="home">
+	<div class="container h-100">
+			<div class="row h-100 align-items-center">
+					<div class="col-12 col-md">
+							<div class="wellcome-heading">
+								<h2>Sign Up </h2>
+								<br><br>
+								<h3>IDMS</h3>
+
+							
+
+<div class="container">
+	<div class="row">
+
+		  <br/><br/><br/>
+	  <!-- <div class="col-lg-12"> -->
+
+		  <div>
+			<!-- <h1 class="col-lg-10"></h1><br> -->
+			<div>
+			  <div class="col-lg-5">
+				<input type="text" class="form-control" #a placeholder="Name" id="AGE" name="AGE">
+				<br>
+				</div>
+				
+				<div class="col-lg-5">
+					<input type="password" class="form-control" #b placeholder="Password" id="pw" name="pw">
+					<br>
+					</div>
+
+				<div class="col-lg-5">
+				<input type="text" class="form-control" #f placeholder="DOB" id="age" name="age">
+				<br>
+				</div>
+
+				<div class="col-lg-5">
+					<input type="text" class="form-control" #c placeholder="City" id="city" name="city">
+					<br>
+				</div>
+
+				<div class="col-lg-5">
+					<input type="text" class="form-control" #d placeholder="Country" id="country" name="country">
+					<br>
+					</div>
+
+					<div class="col-lg-5">
+						<input type="text" class="form-control" #e placeholder="Email Address" id="" name="AGE">
+						<br>
+						</div>
+			  <br><br><br>
+			  <button class="btn btn-warning col-lg-offset-3 col-lg-6" (click)="createAccount(a.value,b.value,c.value,d.value,e.value,f.value)">Set Data</button>
+			</div>
+		  </div>
+    <!-- </div> -->
+    
+    <br><br><br>
+    <div id="qr" style="visibility:hidden">
+      <qr-code [value]="Aqr" [size]="150"></qr-code>
+      <br><br>
+      <p style="color:black; font-size: 32px">Save this Address</p>
+      <p style="color:black; font-size: 32px" id="insert"></p>
+    </div>
+</div>
+</div></div></div></div></div>
+

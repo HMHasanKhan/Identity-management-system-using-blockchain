@@ -1,0 +1,174 @@
+<app-header></app-header>
+
+<!-- <head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/3.3.3/adapter.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+  </head> -->
+<style>
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+</style>
+  
+
+
+
+  <section class="wellcome_area clearfix" id="home">
+    <div class="container h-80">
+        <div class="row h-80 align-items-center">
+            <div class="col-12 col-md">
+              
+              <div class="wellcome-heading">
+                 
+
+                  
+                  <br>  <br><br><br><br>
+                <h2>Login </h2>
+                
+
+<h3>IDMS</h3>
+
+                  
+<div class="col-lg-offset-3">   
+    <br><br><br>
+  <div style="overflow:hidden; width:520px; height:275px;">
+    
+
+  <qr-scanner 
+        [debug]="false"
+        [canvasWidth]="780"
+        [canvasHeight]="480" 
+        [stopAfterScan]="true"
+        [updateTime]="500">
+    </qr-scanner>
+ </div>
+</div> 
+
+
+<div class="container">
+      <div class="col-lg-12">
+       
+      
+      <br/><br/>
+      
+      
+      
+      
+      
+        <div>
+        <!-- <h1 class="col-lg-offset-5">GET DATA</h1><br> -->
+        <div class="col-md-">
+          <div class="col-lg-6">
+          <input type="text" class="form-control" #a placeholder="Identity Address" id="add" name="add" value="" >
+          </div>
+          <div class="col-lg-6">
+            <input type="text" class="form-control" #b placeholder="Password" id="pw" name="pw" value="" >
+            </div>
+          <br><br><br>
+          <button class="btn btn-warning col-lg-offset-3 col-lg-6" (click)="getDataA(a.value,b.value)">View Details</button>
+        </div>
+        </div>
+      </div>
+      <br/><br/><br/><br/><br/><br/>
+     
+
+
+<div class="row">
+  <h1 class="" id="output">{{name}}</h1><br>
+</div>
+</div>
+</div>
+</div>
+<h1 class="" id="output">{{name}}</h1>
+<h1 class="" id="output">{{type}}</h1>
+  
+    <!-- <div>
+        <button class="btn-warning col-lg-5" (click)="Apply()">Apply For Endorsement</button>
+       
+       
+            
+          </div> -->
+        
+        </div>
+  
+    </div>
+    
+
+
